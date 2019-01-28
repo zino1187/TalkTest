@@ -10,13 +10,15 @@ import javax.swing.JScrollPane;
 public class ClientMain extends JFrame{
 	
 	LoginForm loginForm;
-	FriendList friendList;
+	ChatMain friendList;
 	JPanel[] pages=new JPanel[2];
 	JScrollPane scroll; 
+	String path="E:/workspace/spring_workspace/KakaoTalk/data/";
 	
 	public ClientMain() {
 		pages[0]= new LoginForm(this);
-		pages[1]= new FriendList(this);
+		pages[1]= new ChatMain(this);
+		
 		setLayout(new FlowLayout());
 		
 		scroll=new JScrollPane();
